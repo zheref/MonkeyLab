@@ -15,6 +15,11 @@
 		9DB4644321543067006B8678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4644121543067006B8678 /* LaunchScreen.storyboard */; };
 		9DB4644E21543068006B8678 /* MonkeyLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4644D21543068006B8678 /* MonkeyLabTests.swift */; };
 		9DB4645921543068006B8678 /* MonkeyLabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4645821543068006B8678 /* MonkeyLabUITests.swift */; };
+		9DB716F8217639AC004A68FB /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB716F7217639AC004A68FB /* Messages.framework */; };
+		9DB716FB217639AC004A68FB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB716FA217639AC004A68FB /* MessagesViewController.swift */; };
+		9DB716FE217639AC004A68FB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB716FC217639AC004A68FB /* MainInterface.storyboard */; };
+		9DB71700217639AD004A68FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB716FF217639AD004A68FB /* Assets.xcassets */; };
+		9DB71704217639AD004A68FB /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DB716F5217639AC004A68FB /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +37,28 @@
 			remoteGlobalIDString = 9DB4643421543063006B8678;
 			remoteInfo = MonkeyLab;
 		};
+		9DB71702217639AD004A68FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DB4642D21543063006B8678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DB716F4217639AC004A68FB;
+			remoteInfo = MessagesExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9DB71708217639AD004A68FB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9DB71704217639AD004A68FB /* MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2B3AC0CB21695C050066D32E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -49,6 +75,12 @@
 		9DB4645421543068006B8678 /* MonkeyLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonkeyLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB4645821543068006B8678 /* MonkeyLabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonkeyLabUITests.swift; sourceTree = "<group>"; };
 		9DB4645A21543068006B8678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB716F5217639AC004A68FB /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB716F7217639AC004A68FB /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		9DB716FA217639AC004A68FB /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		9DB716FD217639AC004A68FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9DB716FF217639AD004A68FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DB71701217639AD004A68FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +105,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9DB716F2217639AC004A68FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB716F8217639AC004A68FB /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,6 +123,8 @@
 				9DB4643721543063006B8678 /* MonkeyLab */,
 				9DB4644C21543068006B8678 /* MonkeyLabTests */,
 				9DB4645721543068006B8678 /* MonkeyLabUITests */,
+				9DB716F9217639AC004A68FB /* MessagesExtension */,
+				9DB716F6217639AC004A68FB /* Frameworks */,
 				9DB4643621543063006B8678 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +135,7 @@
 				9DB4643521543063006B8678 /* MonkeyLab.app */,
 				9DB4644921543068006B8678 /* MonkeyLabTests.xctest */,
 				9DB4645421543068006B8678 /* MonkeyLabUITests.xctest */,
+				9DB716F5217639AC004A68FB /* MessagesExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +171,25 @@
 			path = MonkeyLabUITests;
 			sourceTree = "<group>";
 		};
+		9DB716F6217639AC004A68FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DB716F7217639AC004A68FB /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DB716F9217639AC004A68FB /* MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9DB716FA217639AC004A68FB /* MessagesViewController.swift */,
+				9DB716FC217639AC004A68FB /* MainInterface.storyboard */,
+				9DB716FF217639AD004A68FB /* Assets.xcassets */,
+				9DB71701217639AD004A68FB /* Info.plist */,
+			);
+			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +200,12 @@
 				9DB4643121543063006B8678 /* Sources */,
 				9DB4643221543063006B8678 /* Frameworks */,
 				9DB4643321543063006B8678 /* Resources */,
+				9DB71708217639AD004A68FB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9DB71703217639AD004A68FB /* PBXTargetDependency */,
 			);
 			name = MonkeyLab;
 			productName = MonkeyLab;
@@ -184,6 +248,23 @@
 			productReference = 9DB4645421543068006B8678 /* MonkeyLabUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9DB716F4217639AC004A68FB /* MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DB71707217639AD004A68FB /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+			buildPhases = (
+				9DB716F1217639AC004A68FB /* Sources */,
+				9DB716F2217639AC004A68FB /* Frameworks */,
+				9DB716F3217639AC004A68FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesExtension;
+			productName = MessagesExtension;
+			productReference = 9DB716F5217639AC004A68FB /* MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +286,9 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 9DB4643421543063006B8678;
 					};
+					9DB716F4217639AC004A68FB = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = 9DB4643021543063006B8678 /* Build configuration list for PBXProject "MonkeyLab" */;
@@ -223,6 +307,7 @@
 				9DB4643421543063006B8678 /* MonkeyLab */,
 				9DB4644821543068006B8678 /* MonkeyLabTests */,
 				9DB4645321543068006B8678 /* MonkeyLabUITests */,
+				9DB716F4217639AC004A68FB /* MessagesExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +334,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB716F3217639AC004A68FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB71700217639AD004A68FB /* Assets.xcassets in Resources */,
+				9DB716FE217639AC004A68FB /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +375,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9DB716F1217639AC004A68FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB716FB217639AC004A68FB /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +395,11 @@
 			isa = PBXTargetDependency;
 			target = 9DB4643421543063006B8678 /* MonkeyLab */;
 			targetProxy = 9DB4645521543068006B8678 /* PBXContainerItemProxy */;
+		};
+		9DB71703217639AD004A68FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DB716F4217639AC004A68FB /* MessagesExtension */;
+			targetProxy = 9DB71702217639AD004A68FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,6 +418,14 @@
 				9DB4644221543067006B8678 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9DB716FC217639AC004A68FB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB716FD217639AC004A68FB /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -435,6 +550,7 @@
 		9DB4645E21543068006B8678 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AQUE4FE98B;
@@ -453,6 +569,7 @@
 		9DB4645F21543068006B8678 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AQUE4FE98B;
@@ -550,6 +667,46 @@
 			};
 			name = Release;
 		};
+		9DB71705217639AD004A68FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQUE4FE98B;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.zheref.MonkeyLab.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DB71706217639AD004A68FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQUE4FE98B;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.zheref.MonkeyLab.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,6 +742,15 @@
 			buildConfigurations = (
 				9DB4646421543068006B8678 /* Debug */,
 				9DB4646521543068006B8678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DB71707217639AD004A68FB /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB71705217639AD004A68FB /* Debug */,
+				9DB71706217639AD004A68FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
