@@ -15,4 +15,8 @@
 
 ### As example
 1. iMessage child app extension to send stickers based on in-line Google results of images.
-2. iMessage standalone app to save phrases and be able to send them easily.
+2. iMessage app extension to save phrases and be able to send them easily.
+
+### As iMessage App Extension
+- `MSMessagesAppViewController` is a subclass of `UIViewController`.
+- `MSMessagesAppViewController` allows us to have both compact and expanded view modes.

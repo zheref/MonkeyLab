@@ -20,6 +20,12 @@
 		9DB716FE217639AC004A68FB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB716FC217639AC004A68FB /* MainInterface.storyboard */; };
 		9DB71700217639AD004A68FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB716FF217639AD004A68FB /* Assets.xcassets */; };
 		9DB71704217639AD004A68FB /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9DB716F5217639AC004A68FB /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9DB7170A217646A2004A68FB /* RecurrentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB71709217646A2004A68FB /* RecurrentMessage.swift */; };
+		9DB7170B217646A2004A68FB /* RecurrentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB71709217646A2004A68FB /* RecurrentMessage.swift */; };
+		9DB7170C217646A2004A68FB /* RecurrentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB71709217646A2004A68FB /* RecurrentMessage.swift */; };
+		9DB7170D217646A2004A68FB /* RecurrentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB71709217646A2004A68FB /* RecurrentMessage.swift */; };
+		9DB7170F21764B70004A68FB /* SavedMessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7170E21764B70004A68FB /* SavedMessageViewCell.swift */; };
+		9DB7171021764B70004A68FB /* SavedMessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7170E21764B70004A68FB /* SavedMessageViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +87,8 @@
 		9DB716FD217639AC004A68FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		9DB716FF217639AD004A68FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB71701217639AD004A68FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB71709217646A2004A68FB /* RecurrentMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurrentMessage.swift; sourceTree = "<group>"; };
+		9DB7170E21764B70004A68FB /* SavedMessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedMessageViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,9 +191,11 @@
 			isa = PBXGroup;
 			children = (
 				9DB716FA217639AC004A68FB /* MessagesViewController.swift */,
+				9DB7170E21764B70004A68FB /* SavedMessageViewCell.swift */,
 				9DB716FC217639AC004A68FB /* MainInterface.storyboard */,
 				9DB716FF217639AD004A68FB /* Assets.xcassets */,
 				9DB71701217639AD004A68FB /* Info.plist */,
+				9DB71709217646A2004A68FB /* RecurrentMessage.swift */,
 			);
 			path = MessagesExtension;
 			sourceTree = "<group>";
@@ -353,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB7170A217646A2004A68FB /* RecurrentMessage.swift in Sources */,
 				9DB4643921543063006B8678 /* AppDelegate.swift in Sources */,
 				2B3AC0D0216960E80066D32E /* MainViewController.swift in Sources */,
 			);
@@ -362,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB7170B217646A2004A68FB /* RecurrentMessage.swift in Sources */,
 				9DB4644E21543068006B8678 /* MonkeyLabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB7170F21764B70004A68FB /* SavedMessageViewCell.swift in Sources */,
+				9DB7170C217646A2004A68FB /* RecurrentMessage.swift in Sources */,
 				9DB4645921543068006B8678 /* MonkeyLabUITests.swift in Sources */,
 				2B3AC0D1216960E80066D32E /* MainViewController.swift in Sources */,
 			);
@@ -379,7 +393,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB7170D217646A2004A68FB /* RecurrentMessage.swift in Sources */,
 				9DB716FB217639AC004A68FB /* MessagesViewController.swift in Sources */,
+				9DB7171021764B70004A68FB /* SavedMessageViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
