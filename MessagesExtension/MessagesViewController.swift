@@ -147,6 +147,7 @@ extension MessagesViewController : UITextFieldDelegate {
 extension MessagesViewController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let savedMessage = savedMessages[indexPath.row]
         
         
     }
