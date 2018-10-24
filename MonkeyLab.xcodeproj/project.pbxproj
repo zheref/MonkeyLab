@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2B3AC0D0216960E80066D32E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AC0CF216960E80066D32E /* MainViewController.swift */; };
 		2B3AC0D1216960E80066D32E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3AC0CF216960E80066D32E /* MainViewController.swift */; };
+		2BB9B7022180D8DD00482580 /* UserNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB9B7012180D8DD00482580 /* UserNotificationsViewController.swift */; };
+		9D58037C2181110E00C2AE07 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D58037B2181110E00C2AE07 /* UserNotifications.framework */; };
 		9DB4643921543063006B8678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4643821543063006B8678 /* AppDelegate.swift */; };
 		9DB4643E21543063006B8678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4643C21543063006B8678 /* Main.storyboard */; };
 		9DB4644021543067006B8678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4643F21543067006B8678 /* Assets.xcassets */; };
@@ -69,6 +71,8 @@
 /* Begin PBXFileReference section */
 		2B3AC0CB21695C050066D32E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2B3AC0CF216960E80066D32E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2BB9B7012180D8DD00482580 /* UserNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsViewController.swift; sourceTree = "<group>"; };
+		9D58037B2181110E00C2AE07 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		9DB4643521543063006B8678 /* MonkeyLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonkeyLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB4643821543063006B8678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DB4643D21543063006B8678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D58037C2181110E00C2AE07 /* UserNotifications.framework in Frameworks */,
 				9DB716F8217639AC004A68FB /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,6 +129,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BB9B6FF2180D89000482580 /* UserNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				2BB9B7012180D8DD00482580 /* UserNotificationsViewController.swift */,
+			);
+			path = UserNotifications;
+			sourceTree = "<group>";
+		};
 		9DB4642C21543063006B8678 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 		9DB4643721543063006B8678 /* MonkeyLab */ = {
 			isa = PBXGroup;
 			children = (
+				2BB9B6FF2180D89000482580 /* UserNotifications */,
 				9DB4643821543063006B8678 /* AppDelegate.swift */,
 				2B3AC0CF216960E80066D32E /* MainViewController.swift */,
 				9DB4643C21543063006B8678 /* Main.storyboard */,
@@ -182,6 +196,7 @@
 		9DB716F6217639AC004A68FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D58037B2181110E00C2AE07 /* UserNotifications.framework */,
 				9DB716F7217639AC004A68FB /* Messages.framework */,
 			);
 			name = Frameworks;
@@ -363,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB9B7022180D8DD00482580 /* UserNotificationsViewController.swift in Sources */,
 				9DB7170A217646A2004A68FB /* RecurrentMessage.swift in Sources */,
 				9DB4643921543063006B8678 /* AppDelegate.swift in Sources */,
 				2B3AC0D0216960E80066D32E /* MainViewController.swift in Sources */,

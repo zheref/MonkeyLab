@@ -182,7 +182,7 @@
         <!--UserNotifications-->
         <scene sceneID="bbb-R4-Vva">
             <objects>
-                <tableViewController title="UserNotifications" id="NAR-zo-8RV" sceneMemberID="viewController">
+                <tableViewController title="UserNotifications" id="NAR-zo-8RV" customClass="UserNotificationsViewController" customModule="MonkeyLab" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EdX-3p-3Ye">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,6 +231,9 @@
                             <outlet property="delegate" destination="NAR-zo-8RV" id="nlE-kd-OoQ"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="permissionCell" destination="usa-PI-1SZ" id="RNi-Ui-ia2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bWC-GM-rgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
